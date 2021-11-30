@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html> 
+    <head>
+        <title>Ethereum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    </head>
+	<body>
+		<section>
+			<header>
+			</header>
+			<nav class="menu">
+			</nav>
+		
+            <div class="container register">
+                <p id="endereco"></p>
+                <div class="row linha">
+                    <div class="col-md-3 register-left">
+                        <img src="img/ethereum.png" alt=""/>
+                        <h3>Boas-vindas</h3>
+                        <p>Crie seus registros na <b>blockchain Ethereum</b> sem complicação!</p>
+                        
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <div class="container register-form">
+                                <div class="form">
+                                    <div class="note">
+                                        <p>Edição</p>
+                                    </div>
+                    
+                                    <div class="form-content">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input id="novo-nome" type="text" class="form-control" placeholder="Novo nome do atributo" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="novo-valor" type="text" class="form-control" placeholder="Novo valor do atributo" value="" />
+                                                </div>
+                                            </div>
+                                        <button id="modal-atualizar" type="button" class="btnSubmit">Atualizar</button>
+                                        <button type="button" class="btnSubmit closed">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Metamask Modal -->
+                        <div id="metamask-modal" class="modal">
+                            <div  class="container register-form">
+                                <div class="form">
+                                    <div class="note">
+                                        
+                                    </div>
+                    
+                                    <div id="div-modal-metamask" class="form-content">
+                                        <p id="metamask-container">Para utilizar esse serviço é necessário a carteira <b>MetaMask</b></p>
+                                        <img src="img/metamask.png" width="100" height="140">
+                                        <br>
+                                        <button id="conectar-metamask" type="button" class="btnSubmit">Conectar</button>
+                                        <a id="obter-metamask" type="button" class="btnSubmit" href="https://metamask.io/download.html" target="_blank">Obter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">                            
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row register-form">
+                                    <div class="col-md-6 formulario">
+                                        <h2 id="nome-tabela" class="register-heading">TABELA</h2>
+                                        <div class='row'>
+                                            <div class="col-8 campo form-group">
+                                                <input id="tabela-input" type="text" class="form-control" placeholder="Nome da tabela" value="" />
+                                            </div>
+                                            <div class="col-4 form-group">
+                                                <input id="add-tabela" type="submit" class="btnAdd"  value="Adicionar"/>
+                                            </div>
+                                        </div>
+                                        <div class=row>
+                                            <div class="col-8 campo form-group">
+                                                <input id="nome-atributo-input" type="text" class="form-control" placeholder="Nome do atributo" value="" />
+                                            </div>
+                                        </div>
+                                        <div class=row>
+                                            <div class="col-8 campo form-group">
+                                                <input id="valor-atributo-input" type="text" class="form-control" placeholder="Valor do atributo" value="" />
+                                            </div>
+                                            <div class="col-4 form-group">
+                                                <input id="add" type="submit" class="btnAdd"  value="Adicionar"/>
+                                            </div>
+                                        </div>
+                                        <input id="registrar" type="submit" class="btnRegister"  value="Registrar"/>
+                                    </div>
+                                    <div class="col-6 container-table tabela">
+                                        <div class="container container-table">
+                                            <div class="row container-table col-md-6 col-md-offset-2 custyle">
+                                                <table id="tabela" class="table table-striped custab">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Atributo</th>
+                                                            <th>Valor</th>
+                                                            <th class="text-center">Ação</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	
+			<footer>
+			</footer>
+			
+		</section>
+
+        <script type="text/javascript" src="./src/modal.js"></script>
+        <script type="text/javascript" src="./src/funcionalidades.js"></script>
+        <script type="text/javascript" src="./src/tratamento_dados.js"></script>
+        <script type="text/javascript" src="./src/app.js"></script>
+        <script type="text/javascript" src="../vendor/web3/dist/web3.min.js"></script>
+        <script type="text/javascript" src="../vendor/truffle-contract/dist/truffle-contract.js"></script>
+	</body>
+	
+<html>
