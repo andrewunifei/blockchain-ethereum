@@ -75,7 +75,7 @@ $(window).on('load', function(){
 
         metamask_modal = document.getElementById("metamask-modal");
 
-        if(ethereum.selectedAddress == null){
+        if(!window.ethereum || ethereum.selectedAddress == null){
             metamask_modal.style.display = 'block';
         }
         else{
