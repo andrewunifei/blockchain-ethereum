@@ -36,13 +36,14 @@ $(document).on('click', '#consultar', function(e) {
     const tableName = $('#tabela-pesquisa').val();
     App.retrieveData(tableName)
     .then((obj) => {
-        console.log(obj["data"])
+        $('.conteudo-consulta').empty()
+
         for(let i = 0; i < obj["tableSize"]; i++){
             $('#tabela-consulta').append(
                 `
-                <tr id=${id_linha} class="linhas">
-                <td>${obj["data"][i][0]}</td>
-                <td>${obj["data"][i][1]}</td>
+                <tr class="conteudo-consulta" id=${id_linha} class="linhas">
+                <td class="conteudo-consulta">${obj["data"][i][0]}</td>
+                <td class="conteudo-consulta">${obj["data"][i][1]}</td>
                 </tr>
                 `
          )
