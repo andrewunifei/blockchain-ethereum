@@ -176,6 +176,10 @@
     cursor: pointer;
 }
 
+#add{
+    margin-top: -4.5vh;
+}
+
 .register{
     background: -webkit-linear-gradient(315deg, #3931af, #00c6ff);
     padding: 3%;
