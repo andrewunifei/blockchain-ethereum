@@ -47,11 +47,12 @@ App = {
         App.dataBase = await App.contracts.DataBase.deployed()
     },
 
-    //Injeta os dados no contrato inteligente
+    // Injeta os dados na blockchain através do contrato inteligente
     injectData: async (tableName, tableSize, attrNames, records) => {
         await App.dataBase.createTable(tableName, tableSize, attrNames, records, {from: ethereum.selectedAddress})
     },
 
+    // Retorna os dados da blockchain
     retrieveData: async (tableName) => {
         let tableSize = await App.dataBase.tableSize(tableName, {from: ethereum.selectedAddress});
         tableSize = tableSize.toNumber()

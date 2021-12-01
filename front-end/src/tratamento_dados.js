@@ -46,7 +46,7 @@ $(document).on('click', '#consultar', function(e) {
                 <td class="conteudo-consulta">${obj["data"][i][1]}</td>
                 </tr>
                 `
-         )
+            )
         }
     })
 });
