@@ -269,3 +269,33 @@
     text-align: left;
     color: #495057;
 }
+
+/* Metamask */
+#metamask-container{
+    padding-top: 30px;
+    color: black;
+}
+
+#div-modal-metamask{
+    border-radius: 3%;
+}
+
+#conectar-metamask{
+    background-color: #fd7e14;
+    margin-bottom: 30px;
+}
+
+#conectar-metamask:hover{
+    background-color: #d1670f;
+}
+
+#obter-metamask:hover{
+    color: white;
+    background-color: #004794;
+    text-decoration: none;
+}
+
+#endereco{
+    color: white;
+    padding-left: 50px;
+}
