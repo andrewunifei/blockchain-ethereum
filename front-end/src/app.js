@@ -52,10 +52,19 @@ App = {
         await App.dataBase.createTable(tableName, tableSize, attrNames, records, {from: ethereum.selectedAddress})
     },
 
-    showData: async () => {
-        const show = await App.dataBase.retrieveRecord("Estudantes", 0, {from: ethereum.selectedAddress});
-        console.log(show)
-        console.log("...")
+    retrieveData: async (tableName) => {
+        let tableSize = await App.dataBase.tableSize(tableName, {from: ethereum.selectedAddress});
+        tableSize = tableSize.toNumber()
+        let data = []
+
+        for(let i = 0; i < tableSize; i++){
+            await App.dataBase.retrieveRecord(tableName, i)
+            .then((result) => {
+                data.push([result["key"], result["value"]])
+            })
+        }
+
+        return {data, tableSize}
     }
 }
 

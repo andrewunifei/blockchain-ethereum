@@ -1,12 +1,13 @@
 $(document).on('click', '#registrar', function(e) {
+    e.preventDefault;
     let attrNames = [];
     let records = [];
     let tableName;
     
     let n = $('#tabela tr').length - 1;
     tableName = document.getElementById('nome-tabela').innerText;
+
     if(n != 0 && tableName != '') { 
-        e.preventDefault;
         let i;
         for(i = 0; i < n; i++) {
             let attr = document.getElementById('nome-atributo-' + i).innerText;
@@ -28,5 +29,23 @@ $(document).on('click', '#registrar', function(e) {
     }
 
     App.injectData(tableName, n, attrNames, records);
-    App.showData();
+});
+
+$(document).on('click', '#consultar', function(e) {
+    e.preventDefault;
+    const tableName = $('#tabela-pesquisa').val();
+    App.retrieveData(tableName)
+    .then((obj) => {
+        console.log(obj["data"])
+        for(let i = 0; i < obj["tableSize"]; i++){
+            $('#tabela-consulta').append(
+                `
+                <tr id=${id_linha} class="linhas">
+                <td>${obj["data"][i][0]}</td>
+                <td>${obj["data"][i][1]}</td>
+                </tr>
+                `
+         )
+        }
+    })
 });

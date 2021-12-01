@@ -130,10 +130,10 @@
                           <div id="aba-consulta" class="aba" style="display:none">
                             <div class="row register-form">
                                 <div class="col-md-6 pesquisa">
-                                    <h2 id="nome-tabela" class="register-heading">TABELA</h2>
+                                    <h2 style="visibility: hidden;" class="register-heading">TABELA</h2>
                                     <div class='row'>
                                         <div class="col-8 campo form-group">
-                                            <input id="tabela-pesquisa" type="text" class="form-control" placeholder="Nome da tabela" value="" />
+                                            <input id="tabela-pesquisa" type="text" class="form-control" placeholder="Nome da tabela" />
                                         </div>
                                     </div>
                                     <input id="consultar" type="submit" class="btnConsult"  value="Consultar"/>
@@ -141,12 +141,11 @@
                                 <div class="col-6 container-table tabela">
                                     <div class="container container-table">
                                         <div class="row container-table col-md-6 col-md-offset-2 custyle">
-                                            <table id="tabela" class="table table-striped custab">
+                                            <table id="tabela-consulta" class="table table-striped custab">
                                                 <thead>
                                                     <tr>
                                                         <th>Atributo</th>
                                                         <th>Valor</th>
-                                                        <th class="text-center">Ação</th>
                                                     </tr>
                                                 </thead>
                                             </table>
