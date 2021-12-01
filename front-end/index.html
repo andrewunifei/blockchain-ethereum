@@ -23,8 +23,8 @@
                 <div class="row linha">
                     <div class="col-md-3 register-left">
                         <img src="img/ethereum.png" alt=""/>
-                        <h3>Boas-vindas</h3>
-                        <p>Crie seus registros na <b>blockchain Ethereum</b> sem complicação!</p>
+                        <h3>Boas-vindas!</h3>
+                        <p>Registre seus contratos inteligentes na <b>blockchain Ethereum</b>.</p>
                         
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
@@ -74,10 +74,10 @@
                         <div class="row">
                             <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a id="menu-registro" target="_blank" onclick="openTab('aba-registro')" class="nav-link active" data-toggle="tab" role="tab">Registro</a>
+                                    <a id="menu-registro" target="_blank" onclick="openTab('aba-registro')" class="nav-link active" data-toggle="tab" role="tab">Registrar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a id="menu-consulta" target="_blank" onclick="openTab('aba-consulta')" class="nav-link" data-toggle="tab" role="tab">Consulta</a>
+                                    <a id="menu-consulta" target="_blank" onclick="openTab('aba-consulta')" class="nav-link" data-toggle="tab" role="tab">Consultar</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,8 +128,32 @@
                         </div>
                           
                           <div id="aba-consulta" class="aba" style="display:none">
-                            <h2>Paris</h2>
-                            <p>Paris is the capital of France.</p>
+                            <div class="row register-form">
+                                <div class="col-md-6 pesquisa">
+                                    <h2 id="nome-tabela" class="register-heading">TABELA</h2>
+                                    <div class='row'>
+                                        <div class="col-8 campo form-group">
+                                            <input id="tabela-pesquisa" type="text" class="form-control" placeholder="Nome da tabela" value="" />
+                                        </div>
+                                    </div>
+                                    <input id="consultar" type="submit" class="btnConsult"  value="Consultar"/>
+                                </div>
+                                <div class="col-6 container-table tabela">
+                                    <div class="container container-table">
+                                        <div class="row container-table col-md-6 col-md-offset-2 custyle">
+                                            <table id="tabela" class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Atributo</th>
+                                                        <th>Valor</th>
+                                                        <th class="text-center">Ação</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                           </div>
 
 

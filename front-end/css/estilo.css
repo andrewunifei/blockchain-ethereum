@@ -1,15 +1,33 @@
+.btnConsult{
+    float: left;
+    margin-left: 2.3vw;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.pesquisa{
+    margin-top: 15vh!important;
+}
 /******************** ABAS ********************/
 .register .nav-tabs{
-    margin-top: 4vh;
-    margin-left: 10vh;
-    border: none;
+    margin-top: 5vh;
+    margin-left: 15.2vh;
+    border: 2.5px solid #0062cc;
+    border-bottom: 3px solid #0062cc;
     background: #0062cc;
     border-radius: 1.5rem;
     width: 15vw;
-    float: left;
 }
 .register .nav-tabs .nav-link{
-    padding: 2%;
+    border: none;
+    padding: 5%;
     height: 34px;
     font-weight: 600;
     color: #fff;
@@ -24,7 +42,7 @@
 .register .nav-tabs .nav-link.active{
     width: 100px;
     color: #0062cc;
-    border: 2px solid #0062cc;
+    border: none;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
@@ -70,7 +88,7 @@
 }
 
 .form{
-    margin: auto;
+    margin: 25vh auto auto auto;
     max-width: 40vw;
 }
 
@@ -124,10 +142,16 @@
     }
 }
 
-.del-btn .myBtn {
-    font-family:unset;
-    font-size:xx-small;
-    line-height:0%;
+.myBtn {
+    margin-bottom: 2px;
+    font-weight: bold!important;
+    font-size: small!important;
+}
+
+.del-btn{
+    margin-bottom: 2px;
+    font-weight: bold!important;
+    font-size: small!important;
 }
 
 /******************** FORMULARIO ********************/
@@ -178,7 +202,7 @@
 .register-left{
     text-align: center;
     color: #fff;
-    margin-top: 4vh;
+    margin-top: 8vh;
 }
 
 .register-left input{
@@ -203,6 +227,7 @@
     background: #f8f9fa;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
+    margin-top: -3%;
 }
 .register-left img{
     margin-top: 15%;
@@ -220,11 +245,11 @@
     100% { transform: translateY(-20px); }
 }
 .register-left p{
-    font-weight: lighter;
+    font-weight: normal;
     margin-bottom: 0!important;
 }
 .register .register-form{
-    padding: 3% 5% 0 5%;
+    padding: 0 5% 0 5%;
     height: 70vh;
 }
 .btnRegister{

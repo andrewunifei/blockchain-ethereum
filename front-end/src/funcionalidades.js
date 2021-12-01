@@ -46,13 +46,13 @@ $(document).on('click', '#add', function(e) {
                     data-valor=${id_valor_atributo}
                     class='btn btn-info btn-xs myBtn' 
                     href="#">
-                    <img width=20 height=20 title="Editar" src="https://cdn0.iconfinder.com/data/icons/glyphpack/45/edit-alt-512.png">
+                    Editar
                 </button> 
                 <button 
                     href="#"
                     data-linha=${id_linha}
                     class="btn btn-danger btn-xs del-btn">
-                    <img width=20 height=20 title="Remover" src="https://cdn1.iconfinder.com/data/icons/andriod-app/36/close-512.png">
+                    Deletar
                 </button>
             </td>
         </tr>`
