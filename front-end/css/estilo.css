@@ -1,3 +1,4 @@
+/******************** ABA CONSULTAR ********************/
 .btnConsult{
     float: left;
     margin-left: 2.3vw;
@@ -13,9 +14,9 @@
 }
 
 .pesquisa{
-    margin-top: 15vh!important;
+    margin-top: 20vh!important;
 }
-/******************** ABAS ********************/
+/******************** MENU DE ABAS ********************/
 .register .nav-tabs{
     margin-top: 5vh;
     margin-left: 15.2vh;
@@ -111,6 +112,14 @@
 }  
 
 /******************** TABELA ********************/
+#tabela-consulta{
+    color: #495057;
+}
+
+#tabela{
+    color: #495057;
+}
+
 .custab{
     border: 1px solid #ccc;
     padding: 5px;
@@ -195,7 +204,7 @@
 }
 
 .formulario{
-    margin-top: 10vh;
+    margin-top: 8vh;
     text-align: center!important;
 }
 
@@ -253,7 +262,8 @@
     height: 70vh;
 }
 .btnRegister{
-    align-content: center;
+    float: left;
+    margin-left: 2.3vw;
     margin-top: 10%;
     border: none;
     border-radius: 1.5rem;
