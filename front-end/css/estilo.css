@@ -1,4 +1,36 @@
-/******************** The Modal (background) ********************/
+/******************** ABAS ********************/
+.register .nav-tabs{
+    margin-top: 4vh;
+    margin-left: 10vh;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 15vw;
+    float: left;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+
+/******************** MODAL ********************/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -207,66 +239,8 @@
     width: 50%;
     cursor: pointer;
 }
-.register .nav-tabs{
-    margin-top: 3%;
-    border: none;
-    background: #0062cc;
-    border-radius: 1.5rem;
-    width: 28%;
-    float: right;
-}
-.register .nav-tabs .nav-link{
-    padding: 2%;
-    height: 34px;
-    font-weight: 600;
-    color: #fff;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-}
-.register .nav-tabs .nav-link:hover{
-    border: none;
-}
-.register .nav-tabs .nav-link.active{
-    width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-}
+
 .register-heading{
     text-align: left;
     color: #495057;
-}
-
-/* MetaMask */
-#div-modal-metamask{
-    padding-top: 20px;
-    border-radius: 2%;
-}
-
-#endereco{
-    padding-left: 10px;
-    padding-top: 20px;
-    color: white;
-}
- 
-#conectar-metamask{
-    background-color: #fd7e14;
-    color: white;
-    margin-bottom: 30px;
-}
-
-#conectar-metamask:hover{
-    background-color: #CA6510;
-}
-
-#obter-metamask:hover{
-    text-decoration: none;
-    color: white;
-    background-color: #004691;
-}
-
-#metamask-container{
-    font-size: large;
-    color: black;
 }

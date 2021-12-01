@@ -68,54 +68,73 @@
                             </div>
                         </div>
                     </div>
+                    <!-- LADO DIREITO -->
                     <div class="col-md-9 register-right">
-                        <div class="tab-content" id="myTabContent">                            
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="row register-form">
-                                    <div class="col-md-6 formulario">
-                                        <h2 id="nome-tabela" class="register-heading">TABELA</h2>
-                                        <div class='row'>
-                                            <div class="col-8 campo form-group">
-                                                <input id="tabela-input" type="text" class="form-control" placeholder="Nome da tabela" value="" />
-                                            </div>
-                                            <div class="col-4 form-group">
-                                                <input id="add-tabela" type="submit" class="btnAdd"  value="Adicionar"/>
-                                            </div>
+
+                        <div class="row">
+                            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a id="menu-registro" target="_blank" onclick="openTab('aba-registro')" class="nav-link active" data-toggle="tab" role="tab">Registro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="menu-consulta" target="_blank" onclick="openTab('aba-consulta')" class="nav-link" data-toggle="tab" role="tab">Consulta</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="aba-registro" class="aba">
+                            <div class="row register-form">
+                                <div class="col-md-6 formulario">
+                                    <h2 id="nome-tabela" class="register-heading">TABELA</h2>
+                                    <div class='row'>
+                                        <div class="col-8 campo form-group">
+                                            <input id="tabela-input" type="text" class="form-control" placeholder="Nome da tabela" value="" />
                                         </div>
-                                        <div class=row>
-                                            <div class="col-8 campo form-group">
-                                                <input id="nome-atributo-input" type="text" class="form-control" placeholder="Nome do atributo" value="" />
-                                            </div>
+                                        <div class="col-4 form-group">
+                                            <input id="add-tabela" type="submit" class="btnAdd"  value="Adicionar"/>
                                         </div>
-                                        <div class=row>
-                                            <div class="col-8 campo form-group">
-                                                <input id="valor-atributo-input" type="text" class="form-control" placeholder="Valor do atributo" value="" />
-                                            </div>
-                                            <div class="col-4 form-group">
-                                                <input id="add" type="submit" class="btnAdd"  value="Adicionar"/>
-                                            </div>
-                                        </div>
-                                        <input id="registrar" type="submit" class="btnRegister"  value="Registrar"/>
                                     </div>
-                                    <div class="col-6 container-table tabela">
-                                        <div class="container container-table">
-                                            <div class="row container-table col-md-6 col-md-offset-2 custyle">
-                                                <table id="tabela" class="table table-striped custab">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Atributo</th>
-                                                            <th>Valor</th>
-                                                            <th class="text-center">Ação</th>
-                                                        </tr>
-                                                    </thead>
-                                                </table>
-                                            </div>
+                                    <div class=row>
+                                        <div class="col-8 campo form-group">
+                                            <input id="nome-atributo-input" type="text" class="form-control" placeholder="Nome do atributo" value="" />
+                                        </div>
+                                    </div>
+                                    <div class=row>
+                                        <div class="col-8 campo form-group">
+                                            <input id="valor-atributo-input" type="text" class="form-control" placeholder="Valor do atributo" value="" />
+                                        </div>
+                                        <div class="col-4 form-group">
+                                            <input id="add" type="submit" class="btnAdd"  value="Adicionar"/>
+                                        </div>
+                                    </div>
+                                    <input id="registrar" type="submit" class="btnRegister"  value="Registrar"/>
+                                </div>
+                                <div class="col-6 container-table tabela">
+                                    <div class="container container-table">
+                                        <div class="row container-table col-md-6 col-md-offset-2 custyle">
+                                            <table id="tabela" class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Atributo</th>
+                                                        <th>Valor</th>
+                                                        <th class="text-center">Ação</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                          
+                          <div id="aba-consulta" class="aba" style="display:none">
+                            <h2>Paris</h2>
+                            <p>Paris is the capital of France.</p>
+                          </div>
+
+
                     </div>
+
                 </div>
             </div>
 	
@@ -124,6 +143,7 @@
 			
 		</section>
 
+        <script type="text/javascript" src="./src/abas.js"></script>
         <script type="text/javascript" src="./src/modal.js"></script>
         <script type="text/javascript" src="./src/funcionalidades.js"></script>
         <script type="text/javascript" src="./src/tratamento_dados.js"></script>
