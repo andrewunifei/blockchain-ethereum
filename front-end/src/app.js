@@ -58,6 +58,8 @@ App = {
         tableSize = tableSize.toNumber()
         let data = []
 
+        console.log(tableSize)
+
         for(let i = 0; i < tableSize; i++){
             await App.dataBase.retrieveRecord(tableName, i)
             .then((result) => {
@@ -76,7 +78,7 @@ $(window).on('load', function(){
         metamask_modal = document.getElementById("metamask-modal");
 
         if(!window.ethereum || ethereum.selectedAddress == null){
-            metamask_modal.style.display = 'none';
+            metamask_modal.style.display = 'block';
         }
         else{
             metamask_modal.style.display = 'none';
